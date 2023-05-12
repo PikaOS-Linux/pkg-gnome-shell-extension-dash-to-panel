@@ -1,4 +1,4 @@
-Source: gnome-shell-extension-arcmenu
+Source: gnome-shell-extension-dash-to-panel
 Section: gnome
 Priority: optional
 Maintainer: Marco Trevisan <marco@ubuntu.com>
@@ -13,15 +13,13 @@ Build-Depends: debhelper (>= 10),
                gettext,
                sassc,
 Standards-Version: 4.1.1
-Vcs-Git: https://gitlab.com/arcmenu/ArcMenu
-Vcs-Browser: https://gitlab.com/arcmenu/ArcMenu
-Homepage: https://gitlab.com/arcmenu/ArcMenu
+Vcs-Git: https://github.com/home-sweet-gnome/dash-to-panel
+Vcs-Browser: https://github.com/home-sweet-gnome/dash-to-panel
+Homepage: https://github.com/home-sweet-gnome/dash-to-panel
 
-Package: gnome-shell-extension-arcmenu
+Package: gnome-shell-extension-dash-to-panel
 Architecture: all
 Depends: gnome-shell,
          ${misc:Depends},
          ${shlibs:Depends},
-         gnome-menus,
-         gir1.2-gmenu-3.0
-Description: ArcMenu is an application menu for GNOME Shell, designed to provide a more familiar user experience and workflow. This extension has many features, including various menu layout styles, GNOME search, quick access to system shortcuts, and much more!
+Description: Dash to Panel is an icon taskbar for Gnome Shell. This extension moves the dash into the gnome main panel so that the application launchers and system tray are combined into a single panel
