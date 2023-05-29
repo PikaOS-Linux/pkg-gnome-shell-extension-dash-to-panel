@@ -2,6 +2,9 @@
 export DH_VERBOSE = 1
 export DEB_BUILD_OPTIONS=nocheck
 
+override_dh_install:
+	dh_install
+	cp debian/gnome-shell-extension-dash-to-panel/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/org.gnome.shell.extensions.dash-to-panel.gschema.xml debian/gnome-shell-extension-dash-to-panel/usr/share/glib-2.0/schemas/
+
 %:
 	dh $@ --with translations
-	cp debian/gnome-shell-extension-dash-to-panel/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/org.gnome.shell.extensions.dash-to-panel.gschema.xml debian/gnome-shell-extension-dash-to-panel/usr/share/glib-2.0/schemas/
