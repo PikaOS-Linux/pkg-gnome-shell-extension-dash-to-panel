@@ -4,3 +4,4 @@ export DEB_BUILD_OPTIONS=nocheck
 
 %:
 	dh $@ --with translations
+	cp debian/gnome-shell-extension-dash-to-panel/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/org.gnome.shell.extensions.dash-to-panel.gschema.xml debian/gnome-shell-extension-dash-to-panel/usr/share/glib-2.0/schemas/
