@@ -1,7 +1,7 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-git clone -b v56 https://github.com/home-sweet-gnome/dash-to-panel ./gnome-shell-extension-dash-to-panel
+git clone -b v59 https://github.com/home-sweet-gnome/dash-to-panel ./gnome-shell-extension-dash-to-panel
 cp -rvf ./debian ./gnome-shell-extension-dash-to-panel/
 cd ./gnome-shell-extension-dash-to-panel
 
